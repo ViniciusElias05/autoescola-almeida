@@ -2,10 +2,19 @@
 const config = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
   addons: [
+    "@storybook/preset-create-react-app",
+    "@storybook/addon-actions",
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/preset-create-react-app",
     "@storybook/addon-interactions",
+    "@storybook/addon-viewport",
+    {
+      name: "@storybook/addon-docs",
+      options: {
+        configureJSX: true,
+      },
+    },
+    "@storybook/addon-knobs",
   ],
   framework: {
     name: "@storybook/react-webpack5",
