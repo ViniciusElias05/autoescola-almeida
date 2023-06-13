@@ -1,5 +1,6 @@
 import React from "react";
 import { text } from "@storybook/addon-knobs";
+import Button from "./Button";
 
 import Hero from "./Hero";
 import BgHighwayImage from "../stories/assets/traffic-gefc7236a6_1280.jpg";
@@ -33,5 +34,9 @@ export const WithList = () => (
       <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
       <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
     </ul>
+    <Button
+      color="primary"
+      variant="outlined"
+    >Matricule-se agora</Button>
   </Hero>
 );
