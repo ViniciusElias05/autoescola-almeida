@@ -1,14 +1,15 @@
 import React from "react";
 import { text } from "@storybook/addon-knobs";
-import Button from "./Button";
 
+
+import BgHighwayImage from "stories/assets/traffic-gefc7236a6_1280.jpg";
+import BgCarImage from "stories/assets/nabeel-syed-Jk3-Uhdwjcs-unsplash.jpg";
+import Heading from "components/atoms/Heading";
+import Button from "components/atoms/Button";
 import Hero from "./Hero";
-import BgHighwayImage from "../stories/assets/traffic-gefc7236a6_1280.jpg";
-import BgCarImage from "../stories/assets/nabeel-syed-Jk3-Uhdwjcs-unsplash.jpg";
-import Heading from "./Heading";
 
 export default {
-  title: "Components/Hero",
+  title: "Components/molecules/Hero",
   tags: ["autodocs"],
   component: Hero,
 };
