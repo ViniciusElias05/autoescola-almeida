@@ -14,8 +14,8 @@ export const ButtonVariants = {
   link: "link",
 };
 
-const getMainColor = ({theme, color}) => {
-  switch(color){
+const getMainColor = ({ theme, color }) => {
+  switch (color) {
     case ButtonColors.primary:
       return theme.colors.primary.main;
     case ButtonColors.danger:
@@ -25,8 +25,8 @@ const getMainColor = ({theme, color}) => {
   };
 };
 
-const getDarkColor = ({theme, color}) =>{
-  switch(color){
+const getDarkColor = ({ theme, color }) => {
+  switch (color) {
     case ButtonColors.primary:
       return theme.colors.primary.dark;
     case ButtonColors.danger:
@@ -35,8 +35,8 @@ const getDarkColor = ({theme, color}) =>{
       return "#5a6268";
   };
 };
-const getColorText = ({theme, color})=> {
-  switch(color){
+const getColorText = ({ theme, color }) => {
+  switch (color) {
     case ButtonColors.primary:
       return theme.colors.primary.text;
     case ButtonColors.danger:
@@ -46,22 +46,23 @@ const getColorText = ({theme, color})=> {
   };
 }
 
-const getOutlinedText = (props) =>{
-  if(props.color === ButtonColors.default){
+const getOutlinedText = (props) => {
+  if (props.color === ButtonColors.default) {
     return "#212121";
   }
-  
+
   return getMainColor(props);
 }
 
-const getLinkText = (props) =>{
-  if(props.color === ButtonColors.default){
+const getLinkText = (props) => {
+  if (props.color === ButtonColors.default) {
     return "#757575";
   }
-  
+
   return getMainColor(props);
 }
 const Button = styled.button`
+  font-family:  'Poppins', sans-serif;
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -108,18 +109,18 @@ const ButtonLink = styled(Button)`
 `;
 
 const ButtonWrapper = (props) => {
-  switch(props.variant){
+  switch (props.variant) {
     case ButtonVariants.outlined:
-    return <ButtonOutlined  {...props} />
+      return <ButtonOutlined  {...props} />
     case ButtonVariants.link:
       return <ButtonLink {...props} />
-    default: 
-      return  <Button {...props} />
+    default:
+      return <Button {...props} />
   }
- 
+
 }
 
-ButtonWrapper.defaultProps ={
+ButtonWrapper.defaultProps = {
   type: "button",
   children: undefined,
   color: "default",
