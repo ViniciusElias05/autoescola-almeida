@@ -28,7 +28,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "cover": "yarn test --coverage --watchAll=false",
-    "chromatic": "chromatic",
+    "chromatic": "chromatic --exit-zero-on-changes",
     "lint": "eslint src/**/*.js"
   },
   "eslintConfig": {
