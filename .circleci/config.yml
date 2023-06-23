@@ -17,4 +17,3 @@ jobs:
 workflow:
     ci:
         - build
-    
