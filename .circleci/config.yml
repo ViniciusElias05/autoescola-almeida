@@ -21,4 +21,3 @@ workflows:
     ci:
         jobs:
             - tests
-    
