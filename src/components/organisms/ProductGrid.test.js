@@ -21,7 +21,7 @@ describe.each(
     [4, 3],
     [6, 3],
   ]
-)("With %i products ", (size, showOnly) => {
+)("With %i products", (size, showOnly) => {
   test(`show only ${showOnly} items`, () => {
     render(<ProductGrid products={buildProducts(size)} />);
 

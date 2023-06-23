@@ -7,7 +7,7 @@ export default {
   component: Heading,
 };
 
-export const usage = () => (
+export const Usage = () => (
   <div>
     <Heading>
       <h1>{text("Title 1", "Título 1")}</h1>

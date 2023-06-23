@@ -8,7 +8,7 @@ export default {
   component: Accordion
 };
 
-export const usage = () => (
+export const Usage = () => (
   <>
     <Accordion title="Como eu renovo a minha CNH?">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, tenetur tempora eius at saepe labore, unde culpa, et consectetur facere nobis eveniet. Quo nostrum esse distinctio illum reiciendis, consequatur odit.

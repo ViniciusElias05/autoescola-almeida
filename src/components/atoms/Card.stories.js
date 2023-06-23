@@ -14,7 +14,7 @@ export default {
   subcomponents: { CardBody, CardMedia },
 };
 
-export const usage = () => (
+export const Usage = () => (
   <Section inverse>
     <Card>
       <CardBody>

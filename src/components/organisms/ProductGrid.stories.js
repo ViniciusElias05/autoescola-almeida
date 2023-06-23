@@ -10,7 +10,7 @@ export default {
   component: ProductGrid
 };
 
-export const usage = () => (
+export const Usage = () => (
   <ProductGrid
     products={[
       { id: 1, image: PlaceholderImage, title: "Título 1", summary: "Texto" },

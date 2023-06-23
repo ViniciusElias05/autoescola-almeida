@@ -28,7 +28,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "cover": "yarn test -- --coverage --watchAll=false",
-    "chromatic": "chromatic --project-token=chpt_1447d1f820a6126"
+    "chromatic": "chromatic --project-token=chpt_1447d1f820a6126",
+    "lint": "eslint src/**/*.js"
   },
   "eslintConfig": {
     "extends": [
