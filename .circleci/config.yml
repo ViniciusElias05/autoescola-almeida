@@ -4,9 +4,9 @@ orbs:
     node: circleci/node@5.1.0
 
 jobs:
-    setup:
+    build:
         docker:
-            - image: circleci/node:18.16.1-browsers
+            - image: cimg/node:18.16.1-browsers
         steps:
             - checkout
             - node/install:
@@ -16,5 +16,5 @@ jobs:
 
 workflow:
     ci:
-        - setup
+        - build
     
