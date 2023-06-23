@@ -1,5 +1,8 @@
 # Auto Escola Almeida
 
+![CircleCI](https://img.shields.io/circleci/build/github/ViniciusElias05/autoescola-almeida/main?style=flat)
+
+
 Este projeto foi desenvolvido durante o curso [React Profissional] (https://nardiniacademy.com).
 
 Resultado final: 
