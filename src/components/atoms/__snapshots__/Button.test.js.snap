@@ -99,6 +99,96 @@ exports[`renders with color primary 1`] = `
 </DocumentFragment>
 `;
 
+exports[`renders with color primary and variant link 1`] = `
+<DocumentFragment>
+  .c0 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 12px 36px;
+  cursor: pointer;
+  background-color: #ffc107;
+  border: 2px solid #ffc107;
+  color: #212121;
+}
+
+.c0:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.c0:hover:enabled {
+  background-color: #c79100;
+  border-color: #c79100;
+}
+
+.c1 {
+  background-color: transparent;
+  border-color: transparent;
+  color: #ffc107;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.c1:hover:enabled {
+  background-color: transparent;
+  border-color: transparent;
+  color: #c79100;
+}
+
+<button
+    class="c0 c1"
+    color="primary"
+    type="button"
+    variant="link"
+  />
+</DocumentFragment>
+`;
+
+exports[`renders with color primary and variant outlined 1`] = `
+<DocumentFragment>
+  .c0 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 12px 36px;
+  cursor: pointer;
+  background-color: #ffc107;
+  border: 2px solid #ffc107;
+  color: #212121;
+}
+
+.c0:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.c0:hover:enabled {
+  background-color: #c79100;
+  border-color: #c79100;
+}
+
+.c1 {
+  background-color: transparent;
+  color: #ffc107;
+}
+
+.c1:hover:enabled {
+  background-color: transparent;
+  color: #c79100;
+}
+
+<button
+    class="c0 c1"
+    color="primary"
+    type="button"
+    variant="outlined"
+  />
+</DocumentFragment>
+`;
+
 exports[`renders with variant default 1`] = `
 <DocumentFragment>
   .c0 {

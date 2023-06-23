@@ -14,7 +14,7 @@ export default {
   component: Hero,
 };
 
-export const usage = () => (
+export const Usage = () => (
   <Hero image={BgHighwayImage}>
     <h1>{text("Title", "Ganhe a sua liberdade para ir e vir")}</h1>
     <p> {text("Text", "A auto escola lider em aprovação.")}</p>

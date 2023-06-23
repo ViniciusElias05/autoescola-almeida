@@ -11,13 +11,13 @@ export default {
   component: Feature,
 };
 
-export const usage = () => (
+export const Usage = () => (
   <Feature icon={<FaCar />} title="Titulo">
     <p>Aprenda a dirigir conosco </p>
   </Feature>
 );
 
-export const withGrid = () => (
+export const WithGrid = () => (
   <Grid sm={2} md={4}>
     <Feature icon={<FaCar />} title="Maior e melhor frota">
       <p>Maior e melhor frota</p>

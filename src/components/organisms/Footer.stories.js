@@ -6,6 +6,6 @@ export default {
   component: Footer
 };
 
-export const usage = () => (
+export const Usage = () => (
   <Footer />
 );

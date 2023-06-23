@@ -32,7 +32,7 @@ describe("when is controlled", () => {
 
     test("renders with children", () => {
       render(<Accordion open>{text}</Accordion>);
-      expect(screen.queryByText(text)).toBeInTheDocument();
+      expect(screen.getByText(text)).toBeInTheDocument();
     })
 
     test("triggers onChange when it is clicked", async () => {
