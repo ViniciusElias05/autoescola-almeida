@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 import Grid from "components/atoms/Grid";
 import Card, { CardBody, CardMedia } from "components/atoms/Card";
 import Heading from "components/atoms/Heading";
 import Button from "components/atoms/Button";
-import styled from "styled-components";
+
 
 const Toolbar = styled.div`
   margin-top: 40px;
@@ -28,7 +30,7 @@ const ProductGrid = ({ products }) => {
                 </Heading>
                 <p>{product.summary}</p>
                 <div>
-                  <Button color="primary" variant="link">Saiba mais</Button>
+                  <Button color="primary" variant="link" as={Link} to="/servicos">Saiba mais</Button>
                 </div>
               </CardBody>
             </Card>

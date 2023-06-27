@@ -1,6 +1,7 @@
 import React from "react";
 // import PropTypes from "prop-types";
 import { FaCar, FaKey, FaMapMarkedAlt, FaAccessibleIcon } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 import Hero from "components/molecules/Hero";
 import Heading from "components/atoms/Heading";
@@ -79,11 +80,11 @@ const Home = () => (
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis error sed possimus. Ab, ipsam! Praesentium suscipit dignissimos quisquam esse assumenda. A nostrum illum quidem veniam repudiandae suscipit aliquid laboriosam? Soluta!
           </p>
           <div>
-            <Button color="primary">Saiba Mais</Button>
+            <Button as={Link} to="/sobre" color="primary">Saiba Mais</Button>
           </div>
         </div>
         <div>
-          <video src={AboutVideo} width="100%" autoPlay loop muted />
+          <video src={AboutVideo} width="100%" autoPlay playsInline loop muted />
         </div>
       </Grid>
 
