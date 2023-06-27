@@ -6,28 +6,30 @@ export const ThemeNames = {
   ocean: "ocean"
 };
 
-const light = {colors: {
-  primary: {
-    main: "#ffc107",
-    dark: "#c79100",
-    light: "#fff350",
-    text: "#212121"
+const light = {
+  colors: {
+    primary: {
+      main: "#ffc107",
+      dark: "#c79100",
+      light: "#fff350",
+      text: "#212121"
+    },
+    danger: {
+      main: "#ff3d00",
+      text: "#212121",
+      dark: "#b22a00"
+    },
+    border: "rgba(0, 0, 0, 0.125)",
   },
-  danger: {
-    main: "#ff3d00",
-    text: "#212121",
-    dark: "#b22a00"
-  }
-}
 };
 
 const allThemes = {
   light,
   ocean: {
     ...light,
-    colors:{
+    colors: {
       ...light.colors,
-      primary:{
+      primary: {
         main: "#2196f3",
         dark: "#1769aa",
         ligth: "#4dabf5",
@@ -39,13 +41,13 @@ const allThemes = {
 
 
 
-const ThemeProvider = ({theme, children}) =>(
+const ThemeProvider = ({ theme, children }) => (
   <StyledProvider theme={allThemes[theme]}>
     {children}
   </StyledProvider>
 );
 
-ThemeProvider.defaultProps ={
+ThemeProvider.defaultProps = {
   theme: "light",
 }
 
