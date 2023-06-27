@@ -41,13 +41,15 @@ const ProductDetail = () => {
     <>
       <Hero image={HeroImage}>
         <Heading>
-          <h1>Nome do Serviço</h1>
+          <h1>
+            Nome do Serviço
+          </h1>
         </Heading>
         <BreadCrumb
           items={[
             { label: "Início", link: "/" },
             { label: "Serviços" },
-            { label: "Nome do Serviço" },
+            { label: "Nome do Servico" },
           ]}
         />
       </Hero>
