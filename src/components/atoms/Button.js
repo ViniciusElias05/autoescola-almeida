@@ -62,7 +62,6 @@ const getLinkText = (props) => {
   return getMainColor(props);
 }
 const Button = styled.button`
-  font-family:  'Poppins', sans-serif;
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -71,13 +70,15 @@ const Button = styled.button`
   background-color: ${getMainColor};
   border: 2px solid ${getMainColor};
   color: ${getColorText};
+  display: inline-block;
+  text-decoration: none;
 
   &:disabled{
     opacity: 0.6;
     cursor: not-allowed;
   }
 
-  &:hover:enabled{
+  &:hover:not(:disabled){
     background-color: ${getDarkColor};
     border-color: ${getDarkColor};
   }
@@ -88,7 +89,7 @@ const ButtonOutlined = styled(Button)`
   background-color: transparent;
   color: ${getOutlinedText};
 
-  &:hover:enabled{
+  &:hover:not(:disabled){
     background-color: transparent;
     color: ${getDarkColor};
   }
@@ -101,7 +102,7 @@ const ButtonLink = styled(Button)`
   padding-left: 0;
   padding-right: 0;
 
-  &:hover:enabled{
+  &:hover:not(:disabled){
     background-color: transparent;
     border-color: transparent;
     color: ${getDarkColor};

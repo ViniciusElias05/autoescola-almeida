@@ -16,6 +16,10 @@ html{
   box-sizing: inherit;
 }
 
+a, button {
+  font-family: "Poppins", sans-serif;
+}
+
 body{
   margin: 0;
 }
