@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { FaIdCard, FaHome, FaScroll } from "react-icons/fa";
 
+import ProductType from "models/types/ProductType";
+
 import Hero from "components/molecules/Hero";
 import Heading from "components/atoms/Heading";
 import Section from "components/molecules/Section";
@@ -12,7 +14,6 @@ import BreadCrumb from "components/atoms/BreadCrumb";
 
 import HeroImage from "assets/Hero.jpg";
 import SpeedImage from "draws/Speed";
-import ProductType from "types/ProductType";
 
 const PinnedList = styled.ul`
   list-style: none;
