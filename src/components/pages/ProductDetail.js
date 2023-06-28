@@ -1,9 +1,6 @@
-import React, { useEffect } from "react";
-import PropTypes from "prop-types";
+import React from "react";
 import styled from "styled-components";
 import { FaIdCard, FaHome, FaScroll } from "react-icons/fa";
-
-import { useScrollToTop } from "hooks/scroll";
 
 import Hero from "components/molecules/Hero";
 import Heading from "components/atoms/Heading";
@@ -15,6 +12,7 @@ import BreadCrumb from "components/atoms/BreadCrumb";
 
 import HeroImage from "assets/Hero.jpg";
 import SpeedImage from "draws/Speed";
+import ProductType from "types/ProductType";
 
 const PinnedList = styled.ul`
   list-style: none;
@@ -35,19 +33,19 @@ const PinnedItem = styled.li`
 `;
 
 
-const ProductDetail = () => (
+const ProductDetail = ({ product }) => (
   <>
     <Hero image={HeroImage}>
       <Heading>
         <h1>
-          Nome do Serviço
+          {product.title}
         </h1>
       </Heading>
       <BreadCrumb
         items={[
           { label: "Início", link: "/" },
           { label: "Serviços" },
-          { label: "Nome do Servico" },
+          { label: product.title },
         ]}
       />
     </Hero>
@@ -107,8 +105,12 @@ const ProductDetail = () => (
   </>
 );
 
-ProductDetail.defaultProps = {};
+ProductDetail.defaultProps = {
+  product: {},
+};
 
-ProductDetail.propTypes = {};
+ProductDetail.propTypes = {
+  product: ProductType,
+};
 
 export default ProductDetail;
