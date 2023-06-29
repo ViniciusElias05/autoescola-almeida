@@ -1,7 +1,9 @@
 import React from "react";
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 import { FaCar, FaKey, FaMapMarkedAlt, FaAccessibleIcon } from "react-icons/fa";
 import { Link } from "react-router-dom";
+
+import ProductType from "models/types/ProductType";
 
 import Hero from "components/molecules/Hero";
 import Heading from "components/atoms/Heading";
@@ -15,21 +17,9 @@ import Accordion, { AccordionGroup } from "components/atoms/Accordion";
 
 import HeroImage from "assets/Hero.jpg";
 import AboutVideo from "assets/AboutVideo.mp4";
-import ImageServ1 from "assets/ImageServ1.jpg";
-import ImageServ2 from "assets/ImageServ2.jpg";
-import ImageServ3 from "assets/ImageServ3.jpg";
-import ImageServ4 from "assets/ImageServ4.jpg";
-import ImageServ5 from "assets/ImageServ5.jpg";
 
-const products = [
-  { id: 1, title: "Habilitação Carro e Moto", summary: " Lorem ipsum dolor sit amet consectetur adipisicing elit.", image: ImageServ1 },
-  { id: 2, title: "Habilitação de Carro", summary: " Lorem ipsum dolor sit amet consectetur adipisicing elit.", image: ImageServ2 },
-  { id: 3, title: "Habilitação de Moto", summary: " Lorem ipsum dolor sit amet consectetur adipisicing elit.", image: ImageServ3 },
-  { id: 4, title: "Mudança para Categoria de Caminhão", summary: " Lorem ipsum dolor sit amet consectetur adipisicing elit.", image: ImageServ4 },
-  { id: 5, title: "Aulas Avulsas", summary: " Lorem ipsum dolor sit amet consectetur adipisicing elit.", image: ImageServ5 },
-]
 
-const Home = () => (
+const Home = ({ products }) => (
   <>
     <Hero image={HeroImage}>
 
@@ -110,9 +100,13 @@ const Home = () => (
   </>
 );
 
-// Home.defaultProps = {};
+Home.defaultProps = {
+  products: [],
+};
 
-// Home.propTypes = {};
+Home.propTypes = {
+  products: PropTypes.arrayOf(ProductType),
+};
 
 export default Home;
 
